@@ -21,8 +21,10 @@ export default function About() {
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
               I&apos;m a 3rd year Mechanical Engineering undergraduate with a strong
               passion for computer-aided design, finite element analysis, and
-              computational fluid dynamics. I enjoy turning complex engineering
-              problems into elegant, optimized solutions.
+              computational fluid dynamics. My current research focuses on
+              fluid mechanics and energy systems, including techno-economic
+              analysis and optimization modeling. I enjoy turning complex
+              engineering problems into elegant, optimized solutions.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
               My coursework and projects have given me hands-on experience with
