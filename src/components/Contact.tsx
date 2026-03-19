@@ -90,7 +90,7 @@ export default function Contact() {
           {/* Social links */}
           <div className="flex flex-col justify-center space-y-6">
             <a
-              href="https://linkedin.com/in/"
+              href="https://www.linkedin.com/in/saminsiddique/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 text-gray-600 hover:text-blue-600 transition-colors group"

@@ -1,14 +1,9 @@
-"use client";
-
-import { Link } from "react-scroll";
+import Link from "next/link";
 import { HiArrowDown } from "react-icons/hi";
 
 export default function Hero() {
   return (
-    <section
-      id="hero"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white pt-16"
-    >
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <p className="text-blue-600 font-medium mb-4 tracking-wide uppercase text-sm">
           Welcome to my portfolio
@@ -22,11 +17,8 @@ export default function Hero() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
-            to="projects"
-            smooth
-            duration={500}
-            offset={-64}
-            className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors cursor-pointer"
+            href="/projects"
+            className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
           >
             View Projects <HiArrowDown />
           </Link>
