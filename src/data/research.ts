@@ -3,16 +3,12 @@ export interface ResearchInterest {
   description: string;
 }
 
-export interface ResearchItem {
-  id: string;
+export interface Publication {
   title: string;
-  status: "ongoing" | "completed" | "published";
-  description: string;
-  tags: string[];
-  journal?: string;
-  date?: string;
+  authors: string;
+  journal: string;
+  year: number;
   doi?: string;
-  coAuthors?: string[];
   link?: string;
 }
 
@@ -34,29 +30,13 @@ export const researchInterests: ResearchInterest[] = [
   },
 ];
 
-export const researchItems: ResearchItem[] = [
+// TODO: Replace this demo entry with your actual publications
+export const publications: Publication[] = [
   {
-    id: "tea-energy-systems",
-    title: "Techno-Economic Assessment of Distributed Energy Systems",
-    status: "ongoing",
-    description:
-      "Developing a framework to evaluate the economic viability and technical performance of distributed energy generation systems under varying operational scenarios.",
-    tags: ["Techno-Economic Analysis", "Energy Systems", "Feasibility Study"],
-  },
-  {
-    id: "milp-energy-optimization",
-    title: "MILP-Based Optimization of Hybrid Energy System Configurations",
-    status: "ongoing",
-    description:
-      "Formulating mixed-integer linear programming models to optimize the design and dispatch strategy of hybrid energy systems for cost and efficiency.",
-    tags: ["MILP", "Optimization", "Hybrid Energy"],
-  },
-  {
-    id: "airfoil-comparison",
-    title: "Comparative Aerodynamic Analysis of Low-Reynolds-Number Airfoils",
-    status: "ongoing",
-    description:
-      "Investigating the aerodynamic performance of various airfoil profiles at low Reynolds numbers through CFD simulation and analytical comparison.",
-    tags: ["CFD", "Airfoil Design", "Low Reynolds Number"],
+    title: "Demo Publication — Replace With Your Own",
+    authors: "S. Siddique, A. Collaborator",
+    journal: "Journal of Example Studies",
+    year: 2026,
+    doi: "10.1234/demo.2026.001",
   },
 ];
