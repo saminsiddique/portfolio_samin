@@ -104,7 +104,7 @@ export default function Contact() {
               </div>
             </a>
             <a
-              href="https://github.com/"
+              href="https://github.com/saminsiddique"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 text-gray-600 hover:text-gray-900 transition-colors group"
@@ -118,7 +118,7 @@ export default function Contact() {
               </div>
             </a>
             <a
-              href="mailto:your@email.com"
+              href="mailto:saminsiddique10@gmail.com"
               className="flex items-center gap-4 text-gray-600 hover:text-blue-600 transition-colors group"
             >
               <span className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-blue-50 transition-colors">
@@ -126,7 +126,7 @@ export default function Contact() {
               </span>
               <div>
                 <p className="font-medium text-gray-900">Email</p>
-                <p className="text-sm">your@email.com</p>
+                <p className="text-sm">saminsiddique10@gmail.com</p>
               </div>
             </a>
           </div>

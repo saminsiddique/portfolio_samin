@@ -18,7 +18,7 @@ export default function Footer() {
             <FaLinkedin size={20} />
           </a>
           <a
-            href="https://github.com/"
+            href="https://github.com/saminsiddique"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
@@ -27,7 +27,7 @@ export default function Footer() {
             <FaGithub size={20} />
           </a>
           <a
-            href="mailto:your@email.com"
+            href="mailto:saminsiddique10@gmail.com"
             className="hover:text-white transition-colors"
             aria-label="Email"
           >

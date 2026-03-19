@@ -6,10 +6,11 @@ import { usePathname } from "next/navigation";
 import { HiMenu, HiX } from "react-icons/hi";
 
 const navLinks = [
-  { href: "/about", label: "About" },
-  { href: "/projects", label: "Projects" },
-  { href: "/skills", label: "Skills" },
-  { href: "/contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#skills", label: "Skills" },
+  { href: "/#contact", label: "Contact" },
+  { href: "/blog", label: "Blog" },
 ];
 
 export default function Navbar() {
@@ -33,7 +34,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               className={`font-medium transition-colors ${
-                pathname === link.href
+                link.href === "/blog" && pathname.startsWith("/blog")
                   ? "text-blue-600"
                   : "text-gray-600 hover:text-blue-600"
               }`}
@@ -61,7 +62,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               className={`block px-4 py-3 hover:bg-gray-50 transition-colors ${
-                pathname === link.href
+                link.href === "/blog" && pathname.startsWith("/blog")
                   ? "text-blue-600"
                   : "text-gray-600 hover:text-blue-600"
               }`}
