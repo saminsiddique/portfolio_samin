@@ -1,14 +1,17 @@
 import Image from "next/image";
+import AnimateOnScroll from "./AnimateOnScroll";
 
 export default function About() {
   return (
     <section id="about" className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
-          About Me
-        </h2>
+        <AnimateOnScroll animation="animate-fade-up">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+            About Me
+          </h2>
+        </AnimateOnScroll>
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="flex justify-center">
+          <AnimateOnScroll animation="animate-fade-in-left" className="flex justify-center">
             <Image
               src="/images/samin_profile.jpg"
               alt="Samin Siddique"
@@ -16,8 +19,8 @@ export default function About() {
               height={400}
               className="rounded-2xl shadow-lg"
             />
-          </div>
-          <div>
+          </AnimateOnScroll>
+          <AnimateOnScroll animation="animate-fade-in-right" delay="animate-delay-2">
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
               I&apos;m a 3rd year Mechanical Engineering undergraduate with a strong
               passion for computer-aided design, finite element analysis, and
@@ -40,7 +43,7 @@ export default function About() {
                 Expected Graduation: 2027
               </p>
             </div>
-          </div>
+          </AnimateOnScroll>
         </div>
       </div>
     </section>
