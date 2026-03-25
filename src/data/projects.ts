@@ -9,11 +9,11 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Go-Kart Chassis Design",
+    title: "3D-Printed Robotic Arm",
     description:
-      "Designed a lightweight tubular steel chassis in SolidWorks with full assembly including steering and suspension mounts. Performed FEA to validate structural integrity under load.",
-    image: "https://placehold.co/800x600/e2e8f0/475569?text=Go-Kart+Chassis",
-    categories: ["CAD", "SolidWorks", "FEA"],
+      "Designed a fully articulated robotic arm in SolidWorks with multiple degrees of freedom for pick-and-place operations. Manufactured all structural components using 3D printing technology and assembled a functional, movable arm capable of controlled motion.",
+    image: "/images/robot_arm_proj.jpg",
+    categories: ["CAD", "3D Printing", "SolidWorks"],
   },
   {
     id: 2,
@@ -60,6 +60,7 @@ export const projects: Project[] = [
 export const allCategories = [
   "All",
   "CAD",
+  "3D Printing",
   "SolidWorks",
   "FEA",
   "CFD",
