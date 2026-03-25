@@ -17,11 +17,11 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Heat Exchanger CFD Analysis",
+    title: "Arduino-Based Surface Roughness Tester",
     description:
-      "Simulated fluid flow and heat transfer in a shell-and-tube heat exchanger using ANSYS Fluent. Optimized baffle spacing for improved thermal performance.",
-    image: "https://placehold.co/800x600/e2e8f0/475569?text=Heat+Exchanger+CFD",
-    categories: ["CFD", "ANSYS"],
+      "Built a portable LVDT-based surface roughness and texture measuring device from scratch as part of ME 2208 sessional. Designed a custom variable inductance sensor, developed C++ firmware on Arduino Uno for real-time data acquisition and OLED display, and conditioned raw analog signals using an LM324 Op-Amp circuit. Took the project from breadboard prototype through custom PCB design to final assembly.",
+    image: "/images/measure_proj.jpg",
+    categories: ["Arduino", "Embedded"],
   },
   {
     id: 3,
@@ -67,4 +67,6 @@ export const allCategories = [
   "ANSYS",
   "MATLAB",
   "Python",
+  "Arduino",
+  "Embedded",
 ];
