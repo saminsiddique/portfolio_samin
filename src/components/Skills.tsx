@@ -23,26 +23,16 @@ export default function Skills() {
               <h3 className="text-xl font-semibold text-gray-900 mb-6">
                 {category}
               </h3>
-              <div className="space-y-5">
+              <div className="flex flex-wrap gap-3">
                 {skills
                   .filter((s) => s.category === category)
                   .map((skill) => (
-                    <div key={skill.name}>
-                      <div className="flex justify-between mb-1">
-                        <span className="text-sm font-medium text-gray-700">
-                          {skill.name}
-                        </span>
-                        <span className="text-sm text-gray-500">
-                          {skill.proficiency}%
-                        </span>
-                      </div>
-                      <div className="w-full bg-gray-200 rounded-full h-2.5">
-                        <div
-                          className="progress-bar-fill bg-blue-600 h-2.5 rounded-full"
-                          style={{ "--target-width": `${skill.proficiency}%` } as React.CSSProperties}
-                        />
-                      </div>
-                    </div>
+                    <span
+                      key={skill.name}
+                      className="px-4 py-2 bg-blue-50 text-blue-700 font-medium text-sm rounded-full border border-blue-200"
+                    >
+                      {skill.name}
+                    </span>
                   ))}
               </div>
             </AnimateOnScroll>
