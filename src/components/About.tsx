@@ -13,7 +13,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <AnimateOnScroll animation="animate-fade-in-left" className="flex justify-center">
             <Image
-              src="/images/samin_profile.jpg"
+              src="/images/samin_archi.jpg"
               alt="Samin Siddique"
               width={400}
               height={400}
