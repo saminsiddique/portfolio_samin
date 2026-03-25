@@ -19,7 +19,7 @@ export const projects: Project[] = [
     id: 2,
     title: "Arduino-Based Surface Roughness Tester",
     description:
-      "Built a portable LVDT-based surface roughness and texture measuring device from scratch as part of ME 2208 sessional. Designed a custom variable inductance sensor, developed C++ firmware on Arduino Uno for real-time data acquisition and OLED display, and conditioned raw analog signals using an LM324 Op-Amp circuit. Took the project from breadboard prototype through custom PCB design to final assembly.",
+      "Built a portable LVDT-based surface roughness and texture measuring device from scratch as part of ME 2208 sessional. Designed a custom variable inductance sensor, developed C++ firmware on Arduino Uno for real-time data acquisition and OLED display, and conditioned raw analog signals using an LM324 Op-Amp circuit.",
     image: "/images/measure_proj.jpg",
     categories: ["Arduino", "Embedded"],
   },
